@@ -1,6 +1,6 @@
 import { iPost } from './i-post';
 
-export interface JsonResponse {
+export interface iJsonResponse {
   posts: iPost[];
   total: number;
   skip: number;

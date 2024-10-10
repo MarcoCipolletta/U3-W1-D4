@@ -1,1 +1,15 @@
-<p>home works!</p>
+<div class="container pb-5">
+  <h1 class="text-center">Homepage</h1>
+  <h3>In evidenza</h3>
+  <div *ngIf="featuredPost" class="row justify-content-center">
+    <div class="col-12 col-md-4">
+      <app-card [post]="featuredPost"></app-card>
+    </div>
+  </div>
+  <h3 class="mt-5">Potrebbero Piacerti</h3>
+  <div *ngIf="relatedPosts" class="row g-3">
+    <div *ngFor="let post of relatedPosts" class="col-12 col-md-3">
+      <app-card [post]="post"></app-card>
+    </div>
+  </div>
+</div>

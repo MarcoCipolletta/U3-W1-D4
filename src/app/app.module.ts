@@ -9,6 +9,7 @@ import { ActivePostsComponent } from './pages/active-posts/active-posts.componen
 import { InactivePostsComponent } from './pages/inactive-posts/inactive-posts.component';
 import { PostDetailComponent } from './pages/post-detail/post-detail.component';
 import { NavbarComponent } from './main-components/navbar/navbar.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { NavbarComponent } from './main-components/navbar/navbar.component';
     InactivePostsComponent,
     PostDetailComponent,
     NavbarComponent,
+    CardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
